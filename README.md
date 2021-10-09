@@ -6,5 +6,5 @@ This project is an exercise exploring Laravel's PHPUnit concepts and types of in
 # Installation
 1. Clone the repository or download it;
 2. Run composer install;
-3. Run php artisan key:generate;
-4. Make a copy of the .env.example file in the same location with the name .env;
+3. Make a copy of the .env.example file in the same location with the name .env;
+4. Run php artisan key:generate;
