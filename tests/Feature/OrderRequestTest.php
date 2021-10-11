@@ -16,7 +16,7 @@ class OrderRequestTest extends TestCase
      */
     public function testInitiateClass()
     {
-        // Construção do Request.
+        // Fake Payload.
         $payload = [
             'code' => "AXMS12",
             'sessionID' => "12031",
@@ -90,8 +90,11 @@ class OrderRequestTest extends TestCase
         );
         */
 
-        $orderRequest = new OrderRequest($payload);
 
+        $this->assertCount(32, $payload);
+        $this->assertNotNull($payload);
+
+        $orderRequest = new OrderRequest($payload);
         $this->assertEquals(
             $payload,
             [
